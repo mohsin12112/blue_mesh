@@ -36,7 +36,7 @@ jobs:
         run: flutter test --no-pub
 
       - name: Build Android Release APK
-        run: flutter build apk --release
+        run: flutter build apk --release --no-pub
 
       - name: Upload Release APK Artifact
         uses: actions/upload-artifact@v4
